@@ -1,0 +1,43 @@
+\documentclass[a4paper, 11pt, leqno]{article}
+
+\author{Diederik van Engelenburg (4365402)}
+\title{Huiswerk 1, TW1070}
+\date{\today}
+
+
+%pakketten.
+\usepackage[dutch]{babel}
+
+%commands
+\newcommand{ \dd }{\mathrm{d}}
+
+\begin{document}
+
+\section*{Bioreactor}
+
+We beschouwen een eenvoudig model voor een bioreactor, beschreven door de volgende gekoppelde differentiaalvergelijkingen
+\begin{eqnarray*}
+	\frac{\dd X}{\dd t} &=& \alpha_1 \frac{S}{1 + S} X - X \\
+	\frac{\dd S}{\dd t} &=& - \frac{1}{1 + S}X - S + \alpha_2
+\end{eqnarray*}
+met $X$ en $S$ functies van (de tijd) $t \geq 0$, en $\alpha_1, \alpha_2$ positieve constanten. De functie $X$ staat voor de dichtheid van de bacterie\"en in de reactor en de functie $S$ beschrijft de concentratie van de voeding voor bacteri\"en.
+
+\begin{itemize}
+
+\item Zoek informatie op internet over de bovengegeven vergelijkingen. 
+
+\item Geef een interpretatie van de termen in de differentiaalvergelijkingen. 
+
+\item Bedenk wat je onder evenwicht zou kunnen verstaan en bepaal wat hier de evenwichtswaarden zijn.
+
+\item Bepaal geschikte waarden voor de constanten $\alpha_1, \alpha_2$ en beginwaarden $X(0), S(0)$, en los de vergelijkingen op met de methode van Euler. 
+
+\item Geef de gevonden oplossingen weer in afzonderlijke plots. Geef de oplossingen ook weer in het $X-S$ vlak, het zogenaamde fasevlak. 
+
+\item Verklaar het gedrag van de gevonden oplossingen ook door in de buurt van de evenwichtswaarden te kijken naar de linearisatie. 
+
+\item Ga op zoek naar een zinvolle uitbreiding van het bovengegeven model. Bijvoorbeeld, ga op zoek naar een meer gedetailleerde beschrijving van de bioreactor en analyseer deze. 
+
+\end{itemize}
+
+\end{document}
