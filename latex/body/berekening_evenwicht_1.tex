@@ -1,0 +1,48 @@
+
+
+\section{Berekening evenwicht.}
+We beschouwen de differentiaal vergelijkingen zoals beschreven in sectie ??: %referentie hier plaatsen: 
+
+\begin{align}
+	\tfrac{\dd X}{\dd t} &= \alpha_1 \frac{S}{1 + S} X - X 			\label{eq:1}	\\
+	\tfrac{\dd S}{\dd t} &= - \frac{S}{1 + S}X - S + \alpha_2 		\label{eq:2}
+\end{align}
+Er bevindt zich een evenwicht, wanneer de hoeveelheid bacteri\"en niet meer groeit of daalt \'en hetzelfde geldt voor het voedsel. We gaan nu op zoek naar deze evenwichten, als het er meerdere zijn. In andere woorden, we stellen dat zowel vergelijking (\ref{eq:1}) als vergelijking (\ref{eq:2}) nul moeten zijn. Er vindt dan immers geen verandering plaats in zowel de voedselvoorziening als de groei in bacteri\"en. 
+
+Hiertoe bekijken we eerst vergelijking (\ref{eq:1}). Er volgt snel dat, als $\tfrac{\dd X}{\dd t} = 0$, dan
+\begin{align*}
+	\alpha_1 \frac{S}{1 + S} X - X = 0 &\iff \\
+	X = \alpha_1 \frac{S}{1 + S}X &\iff \\
+	\alpha_1 = \frac{1 + S}{S}
+\end{align*}
+waarbij aangenomen wordt dat $X(t) \not = 0$. Als $X(t) = 0$, geldt namelijk dat de bacteri\"en constant zijn, maar ook dat het voedsel op den duur constant zal worden, als $S(t) = 0$. In dat geval hebben we natuurlijk te maken met een stabiel evenwicht, maar ook met een zinloos evenwicht. Dus geldt er dat
+\begin{equation}
+	S = \frac{1}{\alpha_1 - 1}					\label{eq:3}
+\end{equation}
+als er geen verandering plaatsvindt in bacterie populatie. 
+\\
+\\
+Dit nemen we mee naar de stabilisatie van het voedsel. Immers, als we te maken hebben met een evenwicht, moet gelden dat zowel $\tfrac{\dd X}{\dd t} = 0$ als $\tfrac{\dd S}{ \dd t } = 0$. We weten al dat er een evenwicht plaatsvindt als $X(t) = 0$. We zien dan gelijk aan vergelijking (\ref{eq:2}) dat $S(t)$ ook naar nul toe gaat of gelijk wordt aan $\alpha_2$. Daarnaast hebben we nog te maken met evenwicht als $S(t)$ voldoet aan vergelijking (\ref{eq:3}). 
+
+Uit vergelijking (\ref{eq:2}) vinden we dan dat, als $\tfrac{\dd S}{\dd t} = 0$,
+\begin{align*}
+	- \frac{S}{1 + S}X - S + \alpha_2 = 0 		&\iff \\
+	\frac{S}{1 + S}X = \alpha_2 - S 			&\iff \\
+	X = \frac{\alpha_2 + \alpha_2 S - S - S^2}{S}
+\end{align*}
+Laten we nu weer aannemen dat $S(t) \not = 0$,als dit wel zo is, zien we gelijk dat $X(t)$ naar nul toe gaat (immers: de groei van bacteri|\"en heeft dan een negatief verband met de hoeveelheid bacteri|\"en dat aanwezig is). Er volgt dan dat
+\begin{equation*}
+	X = \alpha_2 \left( \frac{1}{S} + 1 \right) - 1 - S		
+\end{equation*}
+We weten dat, mochten we een evenwicht hebben wat betreft bacteri\"en, er moet gelden dat S voldoet aan vergelijking (\ref{eq:3}). Dus geldt dat
+\begin{equation*}
+	X = \alpha_2 \left( \frac{\alpha_1 - 1}{1} + 1 \right) - 1 - \frac{1}{\alpha_1 - 1}
+\end{equation*}
+Dus weten we dat er een evenwicht is als we zowel hebben dat vergelijking (\ref{eq:3}) geldt en de volgende vergelijking:
+\begin{equation*}
+	X = \alpha_1\alpha_2 - \frac{1}{\alpha_1 - 1} - 1
+\end{equation*}
+Wat als een breuk geschreven kan worden door:
+\begin{equation}
+	X = \frac{ \alpha_1(\alpha_1 \alpha_2 - \alpha_2 - 1)}{ \alpha_1 - 1} 		\label{eq:4}
+\end{equation}
