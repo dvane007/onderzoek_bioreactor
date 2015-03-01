@@ -22,3 +22,12 @@ Aanbevelingen/Adviesplan/Implementatieplan
 Nawoord/Evaluatie/Reflectie
 Literatuurlijst (Reference list)
 Bijlagen (Appendices)
+
+TO DO'S:
+
+* duidelijkere hoofdstuk-structuur.
+* vergelijkingen referentie structuur opzetten (nummers zijn onoverzichtelijk en onhandig vanwege wisselende structuur). 
+* betere titel bedenken voor H1 :)
+* zullen we voor de layout m.b.t. programmeer-code kiezen voor het invoegen van pseudo-code (dan kunnen we alles in python/java/matlab/maple typen / uitvoeren zonder dat het uitmaakt).
+* layout van hoofdstuktitels veranderen? en secties?. We zien uiteindelijk wel, maar lijkt me wel handig (dit is best een beetje lelijk).
+* 
