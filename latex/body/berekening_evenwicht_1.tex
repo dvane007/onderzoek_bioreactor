@@ -1,15 +1,45 @@
 
 
 %onderdeel van chapter 1, eerste analyse vergelijkingen.
-\chapter{Eerste Analyse Vergelijkingen}
+\chapter{Introductie in de vergelijkingen.} %betere titel bedeken!
+
+
+%sectie: vergelijkingen analyseren.
+\section{Interpretatie van de vergelijkingen.}
+
+\subsection*{Bacterie-concentratie}
+De vergelijkingen zoals beschreven in hoofdstuk 1, de inleiding, komen niet uit de lucht vallen. Hier zullen we een korte analyse geven over de interpretatie van de vergelijkingen. Hiertoe beginnen we met de analyse van de bacterie-groei. In eerste instantie beschouwen we hiertoe vat bacteri\"en in optima-forma, oftwel: er is geen enkele beperkende factor met betrekking tot de groei van de kolonie en we bekijken een omgeving waarin geen bacteri\"en worden weggenomen. Dan weten we dat, afhankelijk van het type bacterie, moet gelden:
+%referentie toevoegen naar artikel / website dat dit inderdaad beargumenteert.
+\begin{equation*}
+	X(t) = e^{\alpha_1t} 		
+\end{equation*}
+voor een zekere constante $\alpha_1$, waarbij $X(t)$ de concentratie bacteri\"en is t.o.v. de tijd $t$. Er geldt dan dus ook dat $\tfrac{\dd X}{\dd t} = c X$ voor dezelfde constante $c$. Deze $\alpha_1$ is dus de maximale groei van de bacterie-kolonie. 
+
+Een van de meest logische en meest voor de hand liggende beperkende factoren is dan natuurlijk de voedsel-hoeveelheid. Deze noemen we $S(t)$, een functie die afhankelijk is van de tijd. $S$ is dus de concentratie voedsel. We weten een aantal eigenschappen van de verhouding tussen $S$ en $X$. Een van de meest logische is: als $S(t) = 0$, dan geldt dat er geen groei van bacteri\"en mogelijk is. Het lijkt misschien logisch om te kiezen voor het verband: $\tfrac{\dd X}{\dd t} =  \alpha_1 S X$, maar dan zou de maximale groei overschreden kunnen worden. Daarom kiezen we voor het volgende verband:
+\begin{equation*}
+	\frac{\dd X} {\dd t} = \alpha_1 \frac{S}{1 + S} X
+\end{equation*}
+Dit doen we zodat hoe hoger het voedsel, hoe dichter we tegen de maximale groei ($\alpha_1$) aan gaan zitten. Met dit verband houden we dus rekening met drie eisen: hoe hoger de voedselconcentratie, hoe hoger de bacterie groei, de bacterie-groei is nooit hoger dan de maximum of optimale groei en als de voedselconcentratie nul is, is de toename van bacteri\"en ook nul. Daarmee zitten we bij een redelijk goed verband. De 1 onder de deler in de factor $\frac{S}{1+S}$ zal enkel afhangen van de eenheden waarin gemeten wordt. 
+
+Het vat bacteri\"en, of de bioreactor, is echter niet alleen een plaats waar bacteri\"en normaal kunnen groeien. We willen natuurlijk ook constant een deel van de bacteri\"en wegnemen. In dit geval bepalen we dat we $X(t)$, de totale concentratie bacteri\"en op ieder moment weghalen. Er volgt dus dat er een uitstroom van bacteri\"en is, die per $t$ gelijk is aan $X$. Dus volgt dat we de volgende vergelijking hebben voor de groei van bacteri\"en in de bioreactor:
+\begin{equation}
+	\frac{\dd X}{\dd t} = \alpha_1 \frac{S}{1+S} X - X 		\label{eq:bc1}
+\end{equation}
+en dat is precies de vergelijking zoals gegeven / beschreven in ??%referentie naar eerste beschrijving hier. 
+
+
+\subsection*{voedselconcentratie}
+Vervolgens beschouwen we de voedselconcentratie $S$ in de bioreactor. Wederom beschouwen we eerst een reactor zonder in- of uitstroom. De voedselhoeveelheid hangt dan enkel af van de hoeveelheid bacteri\"en aanwezig in de reactor. Bovendien zal de voedselconcentratie enkel afnemen in het geval we hier beschouwen. We zien dus dat er ongeveer moet gelden dat $\tfrac{\dd S}{\dd t} = - a(t) X$ voor een van de tijd afhankelijke $a(t)$. Om uit te zoeken wat $a(t)$ zou moeten zijn, bekijken we weer een aantal voorwaarden: als $S(t) = 0$ is er geen toename in het voedsel mogelijk is zonder voedseltoevoer. Wederom willen we dat, naarmate het voedsel toeneemt, de voedselafname (relatief) groter wordt, ook wegens vergelijking (\ref{eq:bc1}). 
+
+%precies uitzoeken waarom S / (S + 1). 
 
 
 %sectie: evenwichten: ----------------------------------------------------------------------------------------------------------------
 \section{Berekening evenwicht.}
 We beschouwen de differentiaal vergelijkingen zoals beschreven in sectie ??: %referentie hier plaatsen: 
 \begin{align}
-	\tfrac{\dd X}{\dd t} &= \alpha_1 \frac{S}{1 + S} X - X 			\label{eq:1}	\\
-	\tfrac{\dd S}{\dd t} &= - \frac{S}{1 + S}X - S + \alpha_2 		\label{eq:2}
+	\frac{\dd X}{\dd t} &= \alpha_1 \frac{S}{1 + S} X - X 			\label{eq:1}	\\
+	\frac{\dd S}{\dd t} &= - \frac{S}{1 + S}X - S + \alpha_2 		\label{eq:2}
 \end{align}
 Er bevindt zich een evenwicht, wanneer de hoeveelheid bacteri\"en niet meer groeit of daalt \'en hetzelfde geldt voor het voedsel. We gaan nu op zoek naar deze evenwichten, als het er meerdere zijn. In andere woorden, we stellen dat zowel vergelijking (\ref{eq:1}) als vergelijking (\ref{eq:2}) nul moeten zijn. Er vindt dan immers geen verandering plaats in zowel de voedselvoorziening als de groei in bacteri\"en. 
 
@@ -34,7 +64,7 @@ Uit vergelijking (\ref{eq:2}) vinden we dan dat, als $\tfrac{\dd S}{\dd t} = 0$,
 	\frac{S}{1 + S}X = \alpha_2 - S 			&\iff \\
 	X = \frac{\alpha_2 + \alpha_2 S - S - S^2}{S}
 \end{align*}
-Laten we nu weer aannemen dat $S(t) \not = 0$,als dit wel zo is, zien we gelijk dat $X(t)$ naar nul toe gaat (immers: de groei van bacteri|\"en heeft dan een negatief verband met de hoeveelheid bacteri|\"en dat aanwezig is). Er volgt dan dat
+Laten we nu weer aannemen dat $S(t) \not = 0$,als dit wel zo is, zien we gelijk dat $X(t)$ naar nul toe gaat (immers: de groei van bacteri\"en heeft dan een negatief verband met de hoeveelheid bacteri\"en dat aanwezig is). Er volgt dan dat
 \begin{equation*}
 	X = \alpha_2 \left( \frac{1}{S} + 1 \right) - 1 - S		
 \end{equation*}
