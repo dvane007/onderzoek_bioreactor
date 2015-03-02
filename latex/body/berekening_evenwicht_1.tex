@@ -1,3 +1,4 @@
+% !TEX root = ../main.tex
 
 
 %onderdeel van chapter 1, eerste analyse vergelijkingen.
@@ -33,6 +34,15 @@ Vervolgens beschouwen we de voedselconcentratie $S$ in de bioreactor. Wederom be
 
 %precies uitzoeken waarom S / (S + 1). 
 
+We weten dat bacteri\"en het voedsel omzetten\footnote{referentie hier}. Als we een bioreactor hebben waar bacteri\"en inzitten, is het dus onvermijdelijk dat het voedsel op raakt als er niet constant voedsel wordt toegevoegd. Deze constante toename noemen we $\alpha_2$. Deze toename is dus enkel afhankelijk van hoe hij gekozen is en de eenheden waarin gerekend wordt. De vergelijking voor de voedseltoename op ieder tijdstip $t$ wordt dus
+\begin{equation*}
+	\frac{\dd S}{\dd t} = -\frac{S}{1 + S} X + \alpha_2.
+\end{equation*}
+Als we de bioreactor nu zo uitbreiden dat er ook nog uitstroom is, dan weten we dat (aangezien de eenheden gelijk zijn) moet gelden dat er een afname van voedsel is, die een recht-evenredig verband heeft met de voedselconcentratie op tijdstip $t$. Dus is er een afname van $a S(t)$ op ieder tijdstip. Afhankelijk van de eenheden en de grootte van de uitstroom wordt de constante $a$ gekozen. In dit geval kiezen we $a = 1$, vanwege onder andere de hoeveelheid bacteri\"en die uitstroomt op tijdstip $t$. Bovendien gebruiken we voor zowel de bacterieconcentratie als de voedselconcentratie dezelfde eenheden. Dus volgt er dat de vergelijking voor de verandering in voedselconcentratie er als volgt uitziet:
+\begin{equation}
+	\frac{\dd S}{\dd t} = -\frac{S}{1 + S} X - S + \alpha_2.
+\end{equation}
+Wat precies de vergelijking is zoals gegeven in ?? / beschreven in ??
 
 %sectie: evenwichten: ----------------------------------------------------------------------------------------------------------------
 \section{Berekening evenwicht.}
