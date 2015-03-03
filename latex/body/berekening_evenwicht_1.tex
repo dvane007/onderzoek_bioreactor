@@ -12,7 +12,7 @@
 De vergelijkingen zoals beschreven in hoofdstuk 1, de inleiding, komen niet uit de lucht vallen. Hier zullen we een korte analyse geven over de interpretatie van de vergelijkingen. Hiertoe beginnen we met de analyse van de bacterie-groei. In eerste instantie beschouwen we hiertoe vat bacteri\"en in optima-forma, oftwel: er is geen enkele beperkende factor met betrekking tot de groei van de kolonie en we bekijken een omgeving waarin geen bacteri\"en worden weggenomen. Dan weten we dat, afhankelijk van het type bacterie, moet gelden:
 %referentie toevoegen naar artikel / website dat dit inderdaad beargumenteert.
 \begin{equation*}
-	X(t) = e^{\alpha_1t} 		
+	X(t) = X(0) e^{\alpha_1t} 		
 \end{equation*}
 voor een zekere constante $\alpha_1$, waarbij $X(t)$ de concentratie bacteri\"en is t.o.v. de tijd $t$. Er geldt dan dus ook dat $\tfrac{\dd X}{\dd t} = c X$ voor dezelfde constante $c$. Deze $\alpha_1$ is dus de maximale groei van de bacterie-kolonie. 
 
@@ -48,27 +48,27 @@ Wat precies de vergelijking is zoals gegeven in ?? / beschreven in ??
 \section{Berekening evenwicht.}
 We beschouwen de differentiaal vergelijkingen zoals beschreven in sectie ??: %referentie hier plaatsen: 
 \begin{align}
-	\frac{\dd X}{\dd t} &= \alpha_1 \frac{S}{1 + S} X - X 			\label{eq:1}	\\
-	\frac{\dd S}{\dd t} &= - \frac{S}{1 + S}X - S + \alpha_2 		\label{eq:2}
+	\frac{\dd X}{\dd t} &= \alpha_1 \frac{S}{1 + S} X - X 			\label{eq:be1}	\\
+	\frac{\dd S}{\dd t} &= - \frac{S}{1 + S}X - S + \alpha_2 		\label{eq:be2}
 \end{align}
-Er bevindt zich een evenwicht, wanneer de hoeveelheid bacteri\"en niet meer groeit of daalt \'en hetzelfde geldt voor het voedsel. We gaan nu op zoek naar deze evenwichten, als het er meerdere zijn. In andere woorden, we stellen dat zowel vergelijking (\ref{eq:1}) als vergelijking (\ref{eq:2}) nul moeten zijn. Er vindt dan immers geen verandering plaats in zowel de voedselvoorziening als de groei in bacteri\"en. 
+Er bevindt zich een evenwicht, wanneer de hoeveelheid bacteri\"en niet meer groeit of daalt \'en hetzelfde geldt voor het voedsel. We gaan nu op zoek naar deze evenwichten, als het er meerdere zijn. In andere woorden, we stellen dat zowel vergelijking (\ref{eq:be1}) als vergelijking (\ref{eq:be2}) nul moeten zijn. Er vindt dan immers geen verandering plaats in zowel de voedselvoorziening als de groei in bacteri\"en. 
 
-Hiertoe bekijken we eerst vergelijking (\ref{eq:1}). Er volgt snel dat, als $\tfrac{\dd X}{\dd t} = 0$, dan
+Hiertoe bekijken we eerst vergelijking (\ref{eq:be1}). Er volgt snel dat, als $\tfrac{\dd X}{\dd t} = 0$, dan
 \begin{align*}
 	\alpha_1 \frac{S}{1 + S} X - X = 0 &\iff \\
 	X = \alpha_1 \frac{S}{1 + S}X &\iff \\
 	\alpha_1 = \frac{1 + S}{S}
 \end{align*}
-waarbij aangenomen wordt dat $X(t) \not = 0$. Als $X(t) = 0$, geldt namelijk dat de bacteri\"en constant zijn, maar ook dat het voedsel op den duur constant zal worden, als $S(t) = 0$. In dat geval hebben we natuurlijk te maken met een stabiel evenwicht, maar ook met een zinloos evenwicht. Dus geldt er dat
+waarbij aangenomen wordt dat $X(t) \not = 0$. Als $X(t) = 0$, geldt namelijk dat de bacteri\"en constant zijn, maar ook dat het voedsel constant zal toenemen ($S(t) = \alpha_2 t$). In dat geval hebben we natuurlijk te maken met een stabiel evenwicht, maar ook een triviaal en voor dit onderzoek niet zo belangrijk evenwicht. Dus geldt er dat
 \begin{equation}
-	S = \frac{1}{\alpha_1 - 1}					\label{eq:3}
+	S = \frac{1}{\alpha_1 - 1}								\label{eq:be3}
 \end{equation}
 als er geen verandering plaatsvindt in bacterie populatie. 
 \\
 \\
-Dit nemen we mee naar de stabilisatie van het voedsel. Immers, als we te maken hebben met een evenwicht, moet gelden dat zowel $\tfrac{\dd X}{\dd t} = 0$ als $\tfrac{\dd S}{ \dd t } = 0$. We weten al dat er een evenwicht plaatsvindt als $X(t) = 0$. We zien dan gelijk aan vergelijking (\ref{eq:2}) dat $S(t)$ ook naar nul toe gaat of gelijk wordt aan $\alpha_2$. Daarnaast hebben we nog te maken met evenwicht als $S(t)$ voldoet aan vergelijking (\ref{eq:3}). 
+Dit nemen we mee naar de stabilisatie van het voedsel. Immers, als we te maken hebben met een evenwicht, moet gelden dat zowel $\tfrac{\dd X}{\dd t} = 0$ als $\tfrac{\dd S}{ \dd t } = 0$. We weten al dat er een evenwicht plaatsvindt als $X(t) = 0$. We zien dan gelijk aan vergelijking (\ref{eq:be2}) dat $S(t)$ ook naar nul toe gaat of gelijk wordt aan $\alpha_2$. Daarnaast hebben we nog te maken met evenwicht als $S(t)$ voldoet aan vergelijking (\ref{eq:be3}). 
 
-Uit vergelijking (\ref{eq:2}) vinden we dan dat, als $\tfrac{\dd S}{\dd t} = 0$,
+Uit vergelijking (\ref{eq:be2}) vinden we dan dat, als $\tfrac{\dd S}{\dd t} = 0$,
 \begin{align*}
 	- \frac{S}{1 + S}X - S + \alpha_2 = 0 		&\iff \\
 	\frac{S}{1 + S}X = \alpha_2 - S 			&\iff \\
@@ -78,17 +78,17 @@ Laten we nu weer aannemen dat $S(t) \not = 0$,als dit wel zo is, zien we gelijk 
 \begin{equation*}
 	X = \alpha_2 \left( \frac{1}{S} + 1 \right) - 1 - S		
 \end{equation*}
-We weten dat, mochten we een evenwicht hebben wat betreft bacteri\"en, er moet gelden dat S voldoet aan vergelijking (\ref{eq:3}). Dus geldt dat
+We weten dat, mochten we een evenwicht hebben wat betreft bacteri\"en, er moet gelden dat S voldoet aan vergelijking (\ref{eq:be3}). Dus geldt dat
 \begin{equation*}
 	X = \alpha_2 \left( \frac{\alpha_1 - 1}{1} + 1 \right) - 1 - \frac{1}{\alpha_1 - 1}
 \end{equation*}
-Dus weten we dat er een evenwicht is als we zowel hebben dat vergelijking (\ref{eq:3}) geldt en de volgende vergelijking:
+Dus weten we dat er een evenwicht is als we zowel hebben dat vergelijking (\ref{eq:be3}) geldt en de volgende vergelijking:
 \begin{equation*}
 	X = \alpha_1\alpha_2 - \frac{1}{\alpha_1 - 1} - 1
 \end{equation*}
 Wat als een breuk geschreven kan worden door:
 \begin{equation}
-	X = \frac{ \alpha_1(\alpha_1 \alpha_2 - \alpha_2 - 1)}{ \alpha_1 - 1} 		\label{eq:4}
+	X = \frac{ \alpha_1(\alpha_1 \alpha_2 - \alpha_2 - 1)}{ \alpha_1 - 1} 		\label{eq:be4}
 \end{equation}
  %einde sectie: Berekening Evenwichten.--------------------------------------------------------------------------------------------------
 

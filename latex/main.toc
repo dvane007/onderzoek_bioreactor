@@ -1,0 +1,4 @@
+\select@language {dutch}
+\contentsline {chapter}{\numberline {1}Introductie in de vergelijkingen.}{3}
+\contentsline {section}{\numberline {1.1}Interpretatie van de vergelijkingen.}{3}
+\contentsline {section}{\numberline {1.2}Berekening evenwicht.}{5}
