@@ -1,0 +1,45 @@
+% !TEX root = ../main.tex
+
+%
+%document: beschrijft constatenten alpha_1, alpha_2. Hierin ook methode van Euler verder toelichten en toepassen op een
+%aantal waarden van alpha_1, alpha_2 en beredeneren wat geschikte X(0) en S(0) zijn (in termen van alpha_1 en alpha_2. 
+%
+% Bronnen: http://www.chem.ucla.edu/dept/Faculty/merchant/pdf/microbial.pdf, http://www.ncbi.nlm.nih.gov/pmc/articles/
+% PMC1449012/, http://www.ncbi.nlm.nih.gov/pmc/articles/PMC372817/?page=15.
+
+%begin hoodstuk. 
+\chapter{Bepaling van constanten.}
+\label{Bepaling van constanten}
+
+De vergelijking voor de groei van bacteri\"en zoals eerder beschreven hangt natuurlijk af van het type bacterie waarmee we rekenen en van een aantal factoren naast het voedsel, zoals licht, warmte en dergelijken. We spreken bij bacteri\"en ook wel van een 'specific growth rate', gemeten per uur. 
+
+\section{$\alpha_1$, specifieke-groeifactor}
+Algemeen bekend is dat bacteri\"en zich vermenigvuldigen doormiddel van celdeling. Daarbij ontstaan uit \'e\'en bacterie twee nieuwe, identieke bacteri\"en. In dit model rekenen we met gewicht per inhoudsmaat, maar die zijn min of meer evenredig met de hoeveelheid bacteri\"en in de reactor. Hierdoor weten we dus dat er, uitgaande van het gegeven dat er een beginhoeveelheid $X(0)$ bacteri\"en is, $X(t) = X(0) \cdot 2^{t_d \cdot t}$, waarbij $t_d$ een constante delingsfactor is, die verschilt per type bacterie.We kunnen dit natuurlijk herschrijven tot $X(t) = X(0) \cdot e^{\alpha_1}$, waarbij $\alpha_1$ weer een constante is. Dit is ook de vergelijking zoals we die beschrijven in hoofdstuk \ref{Introductie_vergelijkingen}. Deze $\alpha_1$ word de specifieke, maximale groeifactor genoemd. 
+
+In het vervolg zullen enkel nog gegevens gebruiken van de bacteriesoort E. Coli (vanwege veelvuldig onderzoek naar deze bacteriesoort). De precieze keuze van de groeifactor $\alpha_1$ is dan ook niet van enorm belang voor ons onderzoek, aangezien we de meeste berekeningen doen zonder $\alpha_1$ vast te kiezen. We laten hier een aantal waarden voor de groeifactor zien, zodat er een realistischer context voor het onderzoek wordt geschapen. 
+\\
+\\
+Afhankelijk van een aantal factoren, zoals licht, warmte etc. is onderzoek gedaan naar verschillende groei-waarden voor E. Coli \footnote{namen hier.. (2006), Stad: American Society for Microbiology}. We zien dan dat de waardes sterk verschillen. In ons onderzoek hebben we niet zoveel aan waarden voor $\alpha_1$ die kleiner zijn dan $1$, aangezien dan de hoeveelheid bacteri\"en constant aan het dalen is. Dus moet er gebruik worden gemaakt van een omgeving, zodat we bijvoorbeeld $\alpha_1 = 2.4$ krijgen. We zien dat er waarden bestaan tussen $1$ en $2.4$. De precieze waarde zal dus afhangen van een omstandigheden waarvoor gekozen wordt.
+
+
+\section{$\alpha_2,$ toevoer van voedsel.}
+De toevoer van voedsel wordt in de bioreactor zoals wij die beschrijven als een constante factor beschouwd. De precieze samenstelling van dit voedsel zal natuurlijk afhangen van de bacteriesoort. Duidelijk mag zijn dat kosten het laagst zijn, wanneer er zo min mogelijk voedsel wordt toegevoegd en de beginwaarde voor het voedsel zo laag mogelijk is. In die zien zullen we kijken naar een optimale waarde voor $\alpha_2$, de voedseltoevoer. Uiteraard kan dit van ondergeschikt belang zijn, wanneer het voedsel erg goedkoop is of makkelijk te verkrijgen is. 
+
+Bovendien moet rekening worden gehouden met de tijd die het kost om tot een evenwicht te komen. Het zou immers kunnen zijn dat een evenwicht enkele uren op zich laat wachten. Mede om deze reden zullen we blijven rekenen met $\alpha_2$, zonder hem direct vast te kiezen. We zullen wel een aantal voorbeelden verschaffen, die een realistische waarde bevat, zodat er een duidelijke interpretatie van ons onderzoek kan plaatsvinden. 
+
+
+\section{$X(0)$, beginwaarde van de bacteri\"en.}
+Het moge duidelijk zijn dat $X(0) = 0$ een niet al te veelzeggende beginwaarde is (immers, dan zou ook $S(t) = S(0) + \alpha_2 t$ zijn). De beginwaarde zal echter erg afhangen van $\alpha_1$ en $\alpha_2$. Als we kijken naar optimalisatie, zal dit afhangen van factoren als de mogelijkheid tot het verkrijgen van de bacteri\"en, hun specifieke groeifactor, de voedseltoevoer enz.  
+
+
+
+
+
+
+
+
+
+
+
+
+

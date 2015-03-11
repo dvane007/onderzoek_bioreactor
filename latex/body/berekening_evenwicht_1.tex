@@ -2,8 +2,8 @@
 
 
 %onderdeel van chapter 1, eerste analyse vergelijkingen.
-\chapter{Introductie in de vergelijkingen.} %betere titel bedeken!
-
+\chapter{Introductie in de vergelijkingen.} 			%betere titel bedeken!
+\label{Introductie_vergelijkingen}
 
 %sectie: vergelijkingen analyseren.
 \section{Interpretatie van de vergelijkingen.}
@@ -14,9 +14,9 @@ De vergelijkingen zoals beschreven in hoofdstuk 1, de inleiding, komen niet uit 
 \begin{equation*}
 	X(t) = X(0) e^{\alpha_1t} 		
 \end{equation*}
-voor een zekere constante $\alpha_1$, waarbij $X(t)$ de concentratie bacteri\"en is t.o.v. de tijd $t$. Er geldt dan dus ook dat $\tfrac{\dd X}{\dd t} = c X$ voor dezelfde constante $c$. Deze $\alpha_1$ is dus de maximale groei van de bacterie-kolonie. 
+voor een zekere constante $\alpha_1$, waarbij $X(t)$ de concentratie bacteri\"en is t.o.v. de tijd $t$. Er geldt dan dus ook dat $\tfrac{\dd X}{\dd t} = \alpha_1 X$ voor dezelfde constante $\alpha_1$. Deze $\alpha_1$ is dus de maximale groei van de bacterie-kolonie. 
 
-Een van de meest logische en meest voor de hand liggende beperkende factoren is dan natuurlijk de voedsel-hoeveelheid. Deze noemen we $S(t)$, een functie die afhankelijk is van de tijd. $S$ is dus de concentratie voedsel. We weten een aantal eigenschappen van de verhouding tussen $S$ en $X$. Een van de meest logische is: als $S(t) = 0$, dan geldt dat er geen groei van bacteri\"en mogelijk is. Het lijkt misschien logisch om te kiezen voor het verband: $\tfrac{\dd X}{\dd t} =  \alpha_1 S X$, maar dan zou de maximale groei overschreden kunnen worden. Daarom kiezen we voor het volgende verband:
+Een van de meest logische en meest voor de hand liggende beperkende factoren is dan natuurlijk de voedsel-hoeveelheid. Deze noemen we $S(t)$, een functie die afhankelijk is van de tijd. $S$ is dus de concentratie voedsel. We weten een aantal eigenschappen van de verhouding tussen $S$ en $X$. Een van de meest logische is: als $S(t) = 0$, dan geldt dat er geen groei van bacteri\"en mogelijk is. Er moet dus een verband gekozen worden tussen de bacterie-groei en de voedselconcentratie, zo dat dit kleiner of gelijk is aan 1. Daarom kiezen we voor het volgende verband, waarin de 1 onder de deelstreep een gekozen getal is, die waarschijnlijk zal afhangen van de maten waarin gemeten wordt en andere constanten.
 \begin{equation*}
 	\frac{\dd X} {\dd t} = \alpha_1 \frac{S}{1 + S} X
 \end{equation*}
@@ -27,7 +27,6 @@ Het vat bacteri\"en, of de bioreactor, is echter niet alleen een plaats waar bac
 	\frac{\dd X}{\dd t} = \alpha_1 \frac{S}{1+S} X - X 		\label{eq:bc1}
 \end{equation}
 en dat is precies de vergelijking zoals gegeven / beschreven in ??%referentie naar eerste beschrijving hier. 
-
 
 \subsection*{voedselconcentratie}
 Vervolgens beschouwen we de voedselconcentratie $S$ in de bioreactor. Wederom beschouwen we eerst een reactor zonder in- of uitstroom. De voedselhoeveelheid hangt dan enkel af van de hoeveelheid bacteri\"en aanwezig in de reactor. Bovendien zal de voedselconcentratie enkel afnemen in het geval we hier beschouwen. We zien dus dat er ongeveer moet gelden dat $\tfrac{\dd S}{\dd t} = - a(t) X$ voor een van de tijd afhankelijke $a(t)$. Om uit te zoeken wat $a(t)$ zou moeten zijn, bekijken we weer een aantal voorwaarden: als $S(t) = 0$ is er geen toename in het voedsel mogelijk is zonder voedseltoevoer. Wederom willen we dat, naarmate het voedsel toeneemt, de voedselafname (relatief) groter wordt, ook wegens vergelijking (\ref{eq:bc1}). 
