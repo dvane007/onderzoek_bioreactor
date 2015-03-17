@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-a = 1.5
-b = 4
-xStart = 6
-sStart = 3
-xSize = 5
-sSize = 4
+a = 1.01
+b = 1.1
+xStart = 2
+sStart = 1
+xSize = 10
+sSize = 3
 
 def f(x, s):
     return a*x*s/(1 + s) - x
@@ -43,12 +43,12 @@ plt.plot(a*(b-1/float(a-1)), 1/float(a-1), '*')
 
 #Solution
 def diff(a, b):
-    h = .1
+    h = .01
 
     x = [xStart]
     s = [sStart]
 
-    for i in range(0, 1000):
+    for i in range(0, 10000):
         x.append(x[i]+h*f(x[i], s[i]))
         s.append(s[i]+h*g(x[i], s[i]))
 

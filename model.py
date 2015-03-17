@@ -9,8 +9,8 @@ def diff(a, b):
 
     h = .01
 
-    x = [4]
-    s = [.1]
+    x = [0]
+    s = [6]
 
     for i in range(0, 1000):
         x.append(x[i]+h*f(x[i], s[i]))
@@ -18,8 +18,8 @@ def diff(a, b):
 
     return x, s
 
-a = 1
-b = 4
+a = 0
+b = 5
 
 x, s = diff(a, b)
 t = range(0, 1001)
