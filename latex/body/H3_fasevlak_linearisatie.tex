@@ -21,11 +21,25 @@ Uit de bovenstaande fasevlakken zien we drie duidelijke evenwichten ontstaan.
 
 We beschouwen de vergelijkingen voor bacterie-groei en voedseltoename zoals in hoofdstuk \ref{Introductie_vergelijkingen}. Om de evenwichten zoals we die vinden bij het berekenen van de evenwichten nader te beschouwen, maken we een linearisatie van de vergelijkingen. Hiertoe berekenen we eerst de parti\"ele afgeleiden van de twee vergelijkingen. 
 
-We weten dat er twee type evenwichten zijn; namelijk met $\frac{\dd S}{\dd t} = \alpha_2$ en $\frac{\dd X}{\dd t} = 0$, en $\frac{\dd S}{\dd t} = \frac{1}{\alpha_1 - 1} $ en $\frac{\dd X}{\dd t} = \frac{\alpha_1(\alpha_1 \alpha_2 - \alpha_2 - 1)}{\alpha_1 - 1}$, zoals we zien in sectie ??. Voor de eerste weten we dat er een stabiel evenwicht ontstaat, met de jacoba-matrix:
+We beschouwen de volgende jacoba-matrix, met parti\"ele afgeleiden \footnote{Zie voor de precieze berekening bijlage 2.}: %noem je dat zo?
+
 \begin{equation*}
+	A = 
 	\begin{pmatrix}
-		
+		\frac{\alpha_1 S}{S + 1} - 1 & \frac{\alpha_1 X}{(1 + S)^2} \\
+		-\frac{S}{1 + S} & \frac{-X}{(1 + S)^2} - 1
 	\end{pmatrix}
-	
 \end{equation*}
+
+Hierin vullen we de twee evenwichten in. Eerst de triviale; $S(t) = \alpha_2$ en $X(t) = 0$. Dan volgt de volgende matrix:
+
+\begin{equation*}
+	A_0 = 
+	\begin{pmatrix}
+		\frac{\alpha_1 \alpha_2}{\alpha_2 + 1} - 1 & 0 \\
+		\frac{- \alpha_2}{\alpha_2 + 1} & -1 
+	\end{pmatrix}
+\end{equation*}
+
+We zien dan gelijk dat $\det(A_0) = \frac{-\alpha_1\alpha_2}{\alpha_2 + 1} + 1$
 
