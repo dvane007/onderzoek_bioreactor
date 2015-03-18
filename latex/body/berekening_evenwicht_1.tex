@@ -30,19 +30,23 @@ Het vat bacteri\"en, of de bioreactor, is echter niet alleen een plaats waar bac
 Dit is precies de vergelijking zoals beschreven in hoofdstuk 1. 
 
 \subsection*{Voedselconcentratie}
-Vervolgens analyseren we de vergelijking van de voedselconcentratie $S$ in de bioreactor. Wederom beschouwen we eerst een reactor zonder in- of uitstroom. De voedselconcentratie hangt dan enkel af van de concentratie bacteri\"en aanwezig in de reactor en de eetlust van deze bacteri\"en. De vergelijking is nu $\tfrac{\dd S}{\dd t} = -e(S)X$, met $e(S)$ is de eetlust van de bacteri\"en ten opzichte van de concentratie voedsel. $e(S)$ moet weer voldoen aan een aantal voorwaarden. Als $S = 0$, dan kan de voedselconcentratie niet afnemen, dus $e(0)=0$. Ook willen we dat naarmate het voedselconcentratie groter wordt, de eetlust toeneemt en dat de eetlust nooit groter wordt dan 1. Een functie die hieraan voldoet is $e(S) = \frac{S}{1+S}$. De totale vergelijking wordt nu
-\[\frac{\dd S}{\dd t}=-\frac{S}{1+S}X.\]
+Vervolgens analyseren we de vergelijking van de voedselconcentratie $S$ in de bioreactor. Wederom beschouwen we eerst een reactor zonder in- of uitstroom. De voedselconcentratie hangt dan enkel af van de concentratie bacteri\"en aanwezig in de reactor en de eetlust van deze bacteri\"en. De vergelijking is nu $\tfrac{\dd S}{\dd t} = -e(S)X$, met $e(S)$ is de eetlust van de bacteri\"en ten opzichte van de concentratie voedsel. $e(S)$ moet weer voldoen aan een aantal voorwaarden. Als $S = 0$, dan kan de voedselconcentratie niet afnemen, dus $e(0)=0$. Ook willen we dat naarmate de voedselconcentratie groter wordt, de eetlust toeneemt en dat de eetlust nooit groter wordt dan 1. Een functie die hieraan voldoet is $e(S) = \frac{S}{1+S}$. De totale vergelijking wordt nu
+\[ 
+	\frac{\dd S}{\dd t}=-\frac{S}{1+S}X.
+\]
 We zien nu, dat de voedselconcentratie alleen maar af kan nemen. Dit willen we niet, want, dan zou op een gegeven moment het voedsel op zijn. Om te compenseren voor dit moeten we dus voedsel toevoeren aan de reactor. Als we per tijdseenheid $\alpha_2$ voedsel toevoeren, krijgen we nu de vergelijking
-\[\frac{\dd S}{\dd t}=-\frac{S}{1+S}X+\alpha_2.\]
+\[ 
+	\frac{\dd S}{\dd t}=-\frac{S}{1+S}X + \alpha_2.
+\]
 Als we de bioreactor nu zo uitbreiden dat er ook nog uitstroom is, dan weten we dat (aangezien de eenheden gelijk zijn) moet gelden dat er een afname van voedsel is, die een recht-evenredig verband heeft met de voedselconcentratie op tijdstip $t$. Dus is er een afname van $a S(t)$ op ieder tijdstip. Afhankelijk van de eenheden en de grootte van de uitstroom wordt de constante $a$ gekozen. In dit geval kiezen we $a = 1$, vanwege onder andere de hoeveelheid bacteri\"en die uitstroomt op tijdstip $t$. Bovendien gebruiken we voor zowel de bacterieconcentratie als de voedselconcentratie dezelfde eenheden. Dus volgt er dat de vergelijking voor de verandering in voedselconcentratie er als volgt uitziet:
 \begin{equation}
 	\frac{\dd S}{\dd t} = -\frac{S}{1 + S} X - S + \alpha_2.
 \end{equation}
-Wat precies de vergelijking is zoals beschreven in hoofdstuk 1.
+Wat precies de vergelijking is zoals beschreven in hoofdstuk \ref{Inleiding}.
 
 %sectie: evenwichten: ----------------------------------------------------------------------------------------------------------------
 \section{Berekening evenwicht.}
-We beschouwen de differentiaalvergelijkingen zoals beschreven in hoofdstuk 1:  
+We beschouwen de differentiaalvergelijkingen zoals beschreven in hoofdstuk \ref{Inleiding}:  
 \begin{align}
 	\frac{\dd X}{\dd t} &= \alpha_1 \frac{S}{1 + S} X - X 			\label{eq:be1}	\\
 	\frac{\dd S}{\dd t} &= - \frac{S}{1 + S}X - S + \alpha_2 		\label{eq:be2}
@@ -51,7 +55,7 @@ Dit reactor is in evenwicht als zowel de concentratie bacteri\"en als de concent
 
 We bekijken eerst vergelijking (\ref{eq:be1}).
 
-Uit $\tfrac{\dd X}{\dd t} = 0$, volgt dat $X = 0$ en $S\in\RR$ of $X \neq 0$ en
+Uit $\tfrac{\dd X}{\dd t} = 0$, volgt dat of $X = 0$ of $X \neq 0$. Als $X \not = 0$ volgt:
 \begin{align*}
 	\alpha_1 \frac{S}{1 + S} X - X = 0 &\iff \\
 	X = \alpha_1 \frac{S}{1 + S}X &\iff \\
@@ -78,9 +82,13 @@ Substitueren van $S = \frac{1}{\alpha_1-1}$ geeft
 	X = \alpha_2 \left( \frac{\alpha_1 - 1}{1} + 1 \right) - 1 - \frac{1}{\alpha_1 - 1} = \alpha_1\alpha_2 - \frac{1}{\alpha_1 - 1} - 1
 \end{equation}
 De evenwichten van het stelsel zijn dus
-\[(X,S) = (0, \alpha_2)\]
+\[
+	(X,S) = (0, \alpha_2)
+\]
 en
-\[(X,S) = (\alpha_1\alpha_2 - \frac{1}{\alpha_1 - 1} - 1, \frac{1}{\alpha_1-1})\]
+\[
+	(X,S) = \left( \alpha_1\alpha_2 - \frac{1}{\alpha_1 - 1} - 1, \frac{1}{\alpha_1-1} \right)
+\]
 
  %einde sectie: Berekening Evenwichten.--------------------------------------------------------------------------------------------------
 
