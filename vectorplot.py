@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-a = 1.01
-b = 1.1
+a = 2.4
+b = 1
 xStart = 2
 sStart = 1
 xSize = 10

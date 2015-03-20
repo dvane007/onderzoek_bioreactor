@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.13)  18 MAR 2015 09:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.9.5)  20 MAR 2015 16:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -175,29 +175,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--23
 [7
 
 ]
-Overfull \hbox (8.61803pt too wide) in paragraph at lines 31--31
+Overfull \hbox (8.61803pt too wide) in paragraph at lines 32--32
 []$\OML/cmm/m/it/14.4 X\OT1/cmr/m/n/14.4 (0)\OML/cmm/m/it/14.4 ; S\OT1/cmr/m/n/
 14.4 (0)$ \OT1/cmr/bx/n/14.4 be-gin-waarde van de bac-teri[]e- en voed-
  []
 
-) (./body/H3_fasevlak_linearisatie.tex [8]
+) (./body/H3_fasevlak_linearisatie.tex [8] [9]
 Hoofdstuk 4.
 ) (./body/resultaten.tex) (./body/conclusie.tex) (./postbody/nawoord.tex)
 (./postbody/bibliografie.tex) (./postbody/appendices.tex)
 Overfull \vbox (1.32195pt too high) has occurred while \output is active []
 
 
-[9
+[10
 
-] [10] (./main.aux) ) 
+] [11] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  1738 strings out of 493117
- 20418 string characters out of 6135433
+ 20418 string characters out of 6135434
  85719 words of memory out of 5000000
  5176 multiletter control sequences out of 15000+600000
  17055 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,9n,26p,996b,191s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,9n,26p,965b,191s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
@@ -213,11 +213,12 @@ pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
 usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr
 /local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (11 pages, 186321 bytes).
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (12 pages, 195127 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
