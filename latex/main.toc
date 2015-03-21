@@ -9,5 +9,6 @@
 \contentsline {section}{\numberline {3.3}$X(0), S(0)$ beginwaarde van de bacteri\"e- en voedselconcentratie.}{8}
 \contentsline {chapter}{\numberline {4}Oplossingen van het stelsel.}{10}
 \contentsline {section}{\numberline {4.1}Methode van Euler.}{10}
-\contentsline {section}{\numberline {4.2}Het fasevlak.}{10}
-\contentsline {chapter}{\numberline {5}Linearisatie.}{11}
+\contentsline {section}{\numberline {4.2}Concentratie tegen tijd.}{10}
+\contentsline {section}{\numberline {4.3}Het fasevlak.}{11}
+\contentsline {chapter}{\numberline {5}Linearisatie.}{13}

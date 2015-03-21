@@ -1,12 +1,15 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+time = 100
+h = .01
+steps = int(time/h)
 a = 2.4
-b = 1
-xStart = 2
-sStart = 1
-xSize = 10
-sSize = 3
+b = max(0, 1/(a-1))
+xStart = 1
+sStart = max(0, 1/(a-1))
+xSize = 5
+sSize = 5
 
 def f(x, s):
     return a*x*s/(1 + s) - x
@@ -37,18 +40,16 @@ plt.axis([0, xSize, 0, sSize])
 #Nullclines
 A = [(x/100.0)*xSize for x in range(1, 101)]
 
-plt.plot(A, [1/float(a-1) for x in A])
+plt.plot([0, xSize], [max(0, 1/float(a-1)), max(0, 1/float(a-1))])
 plt.plot([(b-s)*(1+s)/float(s) for s in A], A)
-plt.plot(a*(b-1/float(a-1)), 1/float(a-1), '*')
+plt.plot(max(0, a*(b-1/float(a-1))), max(0, 1/float(a-1)), '*')
 
 #Solution
 def diff(a, b):
-    h = .01
-
     x = [xStart]
     s = [sStart]
 
-    for i in range(0, 10000):
+    for i in range(0, steps):
         x.append(x[i]+h*f(x[i], s[i]))
         s.append(s[i]+h*g(x[i], s[i]))
 
@@ -58,6 +59,6 @@ x, s = diff(a, b)
 plt.plot(x, s)
 
 #Graph
-plt.xlabel('X')
-plt.ylabel('S')
+plt.xlabel('X (bacterieconcentratie)')
+plt.ylabel('S (voedselconcentratie)')
 plt.show()

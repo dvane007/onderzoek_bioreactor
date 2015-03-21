@@ -1,6 +1,12 @@
 import matplotlib.pyplot as plt
 
-steps = 10000
+time = 100
+h = .01
+steps = int(time/h)
+a = 0.9
+b = 5#max(0, 1/(a-1)+1)
+xStart = 1
+sStart = max(0, 1/(a-1))
 
 def diff(a, b):
     def f(x, s):
@@ -9,10 +15,8 @@ def diff(a, b):
     def g(x, s):
         return -x*s/(1 + s) - s + b
 
-    h = .01
-
-    x = [0.1]
-    s = [1/(a-1)]
+    x = [xStart]
+    s = [sStart]
 
     for i in range(0, steps):
         x.append(x[i]+h*f(x[i], s[i]))
@@ -20,14 +24,11 @@ def diff(a, b):
 
     return x, s
 
-a = 2.4
-b = 1/(a-1)+1
-
 x, s = diff(a, b)
-t = range(0, steps + 1)
+t = [t*h for t in range(0, steps + 1)]
 plt.plot(t, x)
 plt.plot(t, s)
 
 plt.xlabel('t')
-plt.ylabel('x (blue), s (green)')
+plt.ylabel('X (blauw), S (groen)')
 plt.show()
