@@ -12,3 +12,4 @@
 \contentsline {section}{\numberline {4.2}Concentratie tegen tijd.}{10}
 \contentsline {section}{\numberline {4.3}Het fasevlak.}{11}
 \contentsline {chapter}{\numberline {5}Linearisatie.}{13}
+\contentsline {chapter}{\numberline {6}Uitbreidingen.}{15}

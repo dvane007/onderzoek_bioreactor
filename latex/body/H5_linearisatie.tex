@@ -37,20 +37,14 @@ G_X(X_0,S_0) & G_S(X_0,S_0) \end{array} \right] =
 \left[ \begin{array}{cc}
 \frac{\alpha_1\alpha_2}{1+\alpha_2}-1 & 0 \\
 \frac{\alpha_2}{1+\alpha_2} & -1 \end{array} \right]\]
-De eigenwaarden van deze matrix zijn $-1$ en $\frac{\alpha_1\alpha_2}{1+\alpha_2}-1$. Als $\alpha_2 < \frac{1}{1-\alpha_1}$ dan beide eigenwaarden kleiner dan 0 en is het punt $(0, \alpha_2)$ een stabiel evenwicht. Zo niet, dan is het een zadelpunt.
+De eigenwaarden van deze matrix zijn $-1$ en $\frac{\alpha_1\alpha_2}{1+\alpha_2}-1$. Als $\alpha_2 < \frac{1}{1-\alpha_1}$ dan zijn beide eigenwaarden kleiner dan 0 en is het punt $(0, \alpha_2)$ een stabiel evenwicht. Zo niet, dan is het een zadelpunt.
 
 Nu beschouwen we het andere evenwicht $(X_0, S_0) = (\alpha_1\alpha_2-\frac{1}{\alpha_1-1}-1,\frac{1}{\alpha_1-1})$. Dan volgt de volgende matrix:
 \[J = \left[ \begin{array}{cc}
 F_X(X_0,S_0) & F_S(X_0,S_0) \\
 G_X(X_0,S_0) & G_S(X_0,S_0) \end{array} \right] =
-a
+\left[ \begin{array}{cc}
+0 & (\alpha_1\alpha_2-\alpha_2-1)(\alpha_1-1) \\
+-\frac{1}{\alpha_1} & -\frac{\alpha_2(\alpha_1-1)^2+1)}{\alpha_1} \end{array} \right]
 \]
-
-
-
-
-
-
-
-
-
+De eigenwaarden van deze matrix zijn $-1$ en $\frac{(1-\alpha_1)(\alpha_1\alpha_2-\alpha_2-1)}{\alpha_1}$. Als $\alpha_2<\frac{1}{\alpha_1-1}$, dan zijn beide eigenwaarden kleiner dan 0 en is het punt $(\alpha_1\alpha_2-\frac{1}{\alpha_1-1}-1,\frac{1}{\alpha_1-1})$ een stabiel evenwicht. Zo niet, dan is het een zadelpunt.
