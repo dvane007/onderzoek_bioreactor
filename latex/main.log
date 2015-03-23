@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.9.5)  21 MAR 2015 18:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.13)  23 MAR 2015 17:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -150,38 +150,63 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count102
+\lst@gtempboxa=\box28
+\lst@token=\toks26
+\lst@length=\count103
+\lst@currlwidth=\dimen115
+\lst@column=\count104
+\lst@pos=\count105
+\lst@lostspace=\dimen116
+\lst@width=\dimen117
+\lst@newlines=\count106
+\lst@lineno=\count107
+\lst@maxwidth=\dimen118
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+\c@lstnumber=\count108
+\lst@skipnumbers=\count109
+\lst@framebox=\box29
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/03/04 1.5c listings configuration
+))
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
+
 \@input{preamble.aux}
 \openout2 = `preamble.aux'.
 
 (./preamble.tex) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
-\scratchdimen=\dimen115
-\scratchbox=\box28
-\nofMPsegments=\count103
-\nofMParguments=\count104
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count105
-\MPscratchDim=\dimen116
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count110
+\scratchdimen=\dimen119
+\scratchbox=\box30
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen120
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks28
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -230,16 +255,22 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+\c@lstlisting=\count116
+LaTeX Font Info:    Try loading font information for U+msa on input line 15.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 14.
+LaTeX Font Info:    Try loading font information for U+msb on input line 15.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Overfull \hbox (6.93384pt too wide) in paragraph at lines 15--15
+ [][] 
+ []
+
+[1
 
 
 
@@ -255,51 +286,51 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Hoofdstuk 1.
 ) (./body/H2_evenwichten.tex [2
 
-]
+] [3]
 Hoofdstuk 2.
-[3
+[4
 
-] [4] [5]) (./body/H3_constanten.tex [6]
+] [5] [6]) (./body/H3_constanten.tex [7]
 Hoofdstuk 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--23
+Underfull \hbox (badness 10000) in paragraph at lines 19--26
 
  []
 
-[7
+[8
 
 ]
-Overfull \hbox (8.61803pt too wide) in paragraph at lines 32--32
+Overfull \hbox (8.61803pt too wide) in paragraph at lines 35--35
 []$\OML/cmm/m/it/14.4 X\OT1/cmr/m/n/14.4 (0)\OML/cmm/m/it/14.4 ; S\OT1/cmr/m/n/
 14.4 (0)$ \OT1/cmr/bx/n/14.4 be-gin-waarde van de bac-teri[]e- en voed-
  []
 
-) (./body/H4_oplossingen.tex [8] [9]
+) (./body/H4_oplossingen.tex [9] [10]
 Hoofdstuk 4.
-[10
+[11
 
-] <../images/figure_1.png, id=54, 578.16pt x 433.62pt>
+] <../images/figure_1.png, id=58, 578.16pt x 433.62pt>
 File: ../images/figure_1.png Graphic file (type png)
 
 <use ../images/figure_1.png>
 Package pdftex.def Info: ../images/figure_1.png used on input line 24.
 (pdftex.def)             Requested size: 180.0pt x 134.99644pt.
 
-<../images/figure_2.png, id=56, 578.16pt x 433.62pt>
+<../images/figure_2.png, id=60, 578.16pt x 433.62pt>
 File: ../images/figure_2.png Graphic file (type png)
 
 <use ../images/figure_2.png>
 Package pdftex.def Info: ../images/figure_2.png used on input line 25.
 (pdftex.def)             Requested size: 180.0pt x 134.99644pt.
 
-<../images/figure_3.png, id=57, 578.16pt x 433.62pt>
+<../images/figure_3.png, id=61, 578.16pt x 433.62pt>
 File: ../images/figure_3.png Graphic file (type png)
 
 <use ../images/figure_3.png>
 Package pdftex.def Info: ../images/figure_3.png used on input line 26.
 (pdftex.def)             Requested size: 180.0pt x 134.99644pt.
 
-<../images/figure_4.png, id=58, 578.16pt x 433.62pt>
+<../images/figure_4.png, id=62, 578.16pt x 433.62pt>
 File: ../images/figure_4.png Graphic file (type png)
 
 <use ../images/figure_4.png>
@@ -315,80 +346,120 @@ Overfull \hbox (2.43333pt too wide) in paragraph at lines 24--28
 [] [] 
  []
 
-<../images/fase_1.png, id=59, 578.16pt x 433.62pt>
+<../images/fase_1.png, id=63, 578.16pt x 433.62pt>
 File: ../images/fase_1.png Graphic file (type png)
  <use ../images/fase_1.png>
 Package pdftex.def Info: ../images/fase_1.png used on input line 46.
 (pdftex.def)             Requested size: 180.0pt x 134.99644pt.
 
-<../images/fase_2.png, id=60, 578.16pt x 433.62pt>
+<../images/fase_2.png, id=64, 578.16pt x 433.62pt>
 File: ../images/fase_2.png Graphic file (type png)
  <use ../images/fase_2.png>
 Package pdftex.def Info: ../images/fase_2.png used on input line 47.
 (pdftex.def)             Requested size: 180.0pt x 134.99644pt.
 
-<../images/fase_3.png, id=61, 578.16pt x 433.62pt>
+<../images/fase_3.png, id=65, 578.16pt x 433.62pt>
 File: ../images/fase_3.png Graphic file (type png)
  <use ../images/fase_3.png>
-Package pdftex.def Info: ../images/fase_3.png used on input line 48.
-(pdftex.def)             Requested size: 180.0pt x 134.99644pt.
-
-<../images/fase_4.png, id=62, 578.16pt x 433.62pt>
-File: ../images/fase_4.png Graphic file (type png)
- <use ../images/fase_4.png>
-Package pdftex.def Info: ../images/fase_4.png used on input line 49.
-(pdftex.def)             Requested size: 180.0pt x 134.99644pt.
-
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 46--50
-[][] []
- []
-
-
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 46--50
-[] [] 
- []
-
-[11 <../images/figure_1.png> <../images/figure_2.png> <../images/figure_3.png> 
-<../images/figure_4.png>]) (./body/H5_linearisatie.tex [12 <../images/fase_1.pn
-g> <../images/fase_2.png> <../images/fase_3.png> <../images/fase_4.png>]
+Package pdftex.dmages/fase_3.png> <../images/fase_4.png>]
 Hoofdstuk 5.
-[13
+[14
 
-]) (./body/H6_uitbreidingen.tex [14]
+]) (./body/H6_uitbreidingen.tex [15]
 Hoofdstuk 6.
-) (./body/resultaten.tex) (./body/conclusie.tex) (./postbody/nawoord.tex)
-(./postbody/bibliografie.tex) (./postbody/appendices.tex) [15
+) (./body/resultaten.tex) (./body/conclusie.tex [16
 
-] (./main.aux) ) 
+]
+Hoofdstuk 7.
+<../images/figure_5.png, id=90, 578.16pt x 433.62pt>
+File: ../images/figure_5.png Graphic file (type png)
+
+<use ../images/figure_5.png>
+Package pdftex.def Info: ../images/figure_5.png used on input line 13.
+(pdftex.def)             Requested size: 216.0022pt x 161.99838pt.
+) [17
+
+ <../images/figure_5.png>]
+(./postbody/nawoord.tex) (./postbody/bibliografie.tex)
+(./postbody/appendices.tex [18]
+./postbody/appendices.tex:10: Undefined control sequence.
+l.10 \lstinputlisting
+                     [language=Python]{../model.py}
+? H
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+? 
+./postbody/appendices.tex:10: Emergency stop.
+l.10 \lstinputlisting
+                     [language=Python]{../model.py}
+End of file on the terminal!
+
+ 
 Here is how much of TeX's memory you used:
- 3037 strings out of 493117
- 40331 string characters out of 6135434
- 109007 words of memory out of 5000000
- 6396 multiletter control sequences out of 15000+600000
+ 3039 strings out of 493117
+ 40428 string characters out of 6135433
+ 109027 words of memory out of 5000000
+ 6399 multiletter control sequences out of 15000+600000
  17055 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,9n,26p,965b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9
-.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
-fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (16 pages, 616767 bytes).
+ 37i,9n,26p,965b,229s stack positions out of 5000i,500n,10000p,200000b,80000s
+./postbody/appendices.tex:10:  ==> Fatal error occurred, no output PDF file pro
+duced!
+ omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+
+[20
+
+]) [21] (../vectorplot.py [22
+
+]
+Overfull \hbox (73.62451pt too wide) in paragraph at lines 43--44
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (53.9143pt too wide) in paragraph at lines 45--47
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+)) [23] (./main.aux) ) 
+Here is how much of TeX's memory you used:
+ 4482 strings out of 493117
+ 60876 string characters out of 6135433
+ 161255 words of memory out of 5000000
+ 7811 multiletter control sequences out of 15000+600000
+ 17746 words of font info for 68 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,9n,43p,863b,1603s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
+.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on main.pdf (24 pages, 690189 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
+ 177 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

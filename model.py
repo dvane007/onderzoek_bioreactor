@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 time = 100
 h = .01
 steps = int(time/h)
-a = 0.9
-b = 5#max(0, 1/(a-1)+1)
-xStart = 1
-sStart = max(0, 1/(a-1))
+a = 1.30
+b = 4.1 #max(0, 1/(a-1)+1)
+xStart = 0.4
+sStart = 0.5 #max(0, 1/(a-1))
 
 def diff(a, b):
     def f(x, s):

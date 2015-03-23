@@ -1,15 +1,16 @@
 \select@language {dutch}
 \contentsline {chapter}{\numberline {1}Inleiding}{2}
-\contentsline {chapter}{\numberline {2}Introductie in de vergelijkingen.}{3}
-\contentsline {section}{\numberline {2.1}Interpretatie van de vergelijkingen.}{3}
-\contentsline {section}{\numberline {2.2}Berekening evenwicht.}{5}
-\contentsline {chapter}{\numberline {3}Bepaling van de constanten.}{7}
-\contentsline {section}{\numberline {3.1}$\alpha _1$, specifieke-groeifactor}{7}
-\contentsline {section}{\numberline {3.2}$\alpha _2,$ toevoer van voedsel.}{8}
-\contentsline {section}{\numberline {3.3}$X(0), S(0)$ beginwaarde van de bacteri\"e- en voedselconcentratie.}{8}
-\contentsline {chapter}{\numberline {4}Oplossingen van het stelsel.}{10}
-\contentsline {section}{\numberline {4.1}Methode van Euler.}{10}
-\contentsline {section}{\numberline {4.2}Concentratie tegen tijd.}{10}
-\contentsline {section}{\numberline {4.3}Het fasevlak.}{11}
-\contentsline {chapter}{\numberline {5}Linearisatie.}{13}
-\contentsline {chapter}{\numberline {6}Uitbreidingen.}{15}
+\contentsline {chapter}{\numberline {2}Introductie in de vergelijkingen.}{4}
+\contentsline {section}{\numberline {2.1}Interpretatie van de vergelijkingen.}{4}
+\contentsline {section}{\numberline {2.2}Berekening evenwicht.}{6}
+\contentsline {chapter}{\numberline {3}Bepaling van de constanten.}{8}
+\contentsline {section}{\numberline {3.1}$\alpha _1$, specifieke-groeifactor}{8}
+\contentsline {section}{\numberline {3.2}$\alpha _2,$ toevoer van voedsel.}{9}
+\contentsline {section}{\numberline {3.3}$X(0), S(0)$ beginwaarde van de bacteri\"e- en voedselconcentratie.}{9}
+\contentsline {chapter}{\numberline {4}Oplossingen van het stelsel.}{11}
+\contentsline {section}{\numberline {4.1}Methode van Euler.}{11}
+\contentsline {section}{\numberline {4.2}Concentratie tegen tijd.}{11}
+\contentsline {section}{\numberline {4.3}Het fasevlak.}{12}
+\contentsline {chapter}{\numberline {5}Linearisatie.}{14}
+\contentsline {chapter}{\numberline {6}Uitbreidingen.}{16}
+\contentsline {chapter}{\numberline {7}Conclusie.}{17}

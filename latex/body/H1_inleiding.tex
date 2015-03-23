@@ -3,4 +3,18 @@
 %Inleiding
 \chapter{Inleiding}
 \label{Inleiding}
-Het onderzoek zoals .... 
+In dit onderzoek gaan we opzoek naar een optimaal evenwicht in een bioreactor. Zo een reactor is in feite een vat waarin  een bio-chemische reactie plaatsvindt. In ons geval gaat het over de groei van bacterie-coloni\"en. Hiertoe zullen wij een vereenvoudigd model van een bioreactor bekijken, met als doel een evenwicht te vinden z\'o dat er zo min mogelijk kosten worden gemaakt, en zo veel mogelijk bacteri\"en worden gekweekt. 
+
+Hiertoe beperken wij ons tot enkel twee variabelen; de voedsel- en de bacterieconcentratie. De vergelijkingen die de verandering ten opzichte van elkaar weergeven, kregen we als volgt aangeboden:
+	
+\begin{align}
+	\frac{\dd X}{\dd t} &= \alpha_1 \frac{S}{1 + S} X - X 				\\
+	\frac{\dd S}{\dd t} &= - \frac{S}{1 + S}X - S + \alpha_2, 		
+\end{align}
+met $X$ de bacterie- en $S$ de voedselconcentratie. De maten waarin precies gemeten wordt, laten we voorlopig even in ons midden, het gaat meer om de verhoudingen. 
+
+In de rest van ons onderzoek, zullen we deze vergelijkingen uitleggen en nader analyseren. Dit doen we allereerst door analytisch opzoek te gaan naar de evenwichtsvoorwaarden. Daarna proberen we geschikte constanten te vinden, die zowel realistisch als nuttig zijn voor het vervolg van het onderzoek.
+
+Als we deze twee stappen eenmaal hebben uitgevoerd, duiken we dieper in de evenwichten, door de methode van Euler toe te passen op de bovenstaande vergelijkingen. Hierbij gebruiken we verschillende constanten en beginwaarden om een zo gevari\"eerd mogelijk beeld te geven van de mogelijkheden. Als laatste onderdeel van ons daadwerkelijke onderzoek gaan we de gevonden evenwichten nader beschouwen door linearisatie toe te passen. Hiermee kunnen we de gevonden evenwichten namelijk beter benaderen. 
+
+We sluiten het onderzoek af met een conclusie en mogelijke uitbreidingen voor het onderzoek. 
