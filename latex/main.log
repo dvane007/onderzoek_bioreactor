@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.13)  24 MAR 2015 14:43
+=======
+<<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.9.5)  24 MAR 2015 13:21
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.13)  24 MAR 2015 09:34
+>>>>>>> origin/master
+>>>>>>> origin/master
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -391,9 +399,22 @@ Hoofdstuk 6.
 
 ]) (./body/resultaten.tex) (./body/conclusie.tex [17]
 Hoofdstuk 7.
+<<<<<<< HEAD
+<../images/figure_5.png, id=91, 578.16pt x 433.62pt>
+File: ../images/figure_5.png Graphic file (type png)
+
+<use ../images/figure_5.png>
+Package pdftex.def Info: ../images/figure_5.png used on input line 13.
+(pdftex.def)             Requested size: 216.0022pt x 161.99838pt.
+) [17
+
+ <../images/figure_5.png>]
+(./postbody/nawoord.tex) (./postbody/bibliografie.tex [18])
+=======
 ) (./postbody/nawoord.tex) (./postbody/bibliografie.tex [18
 
 ])
+>>>>>>> origin/master
 (./postbody/appendices.tex [19
 
 ]
@@ -424,10 +445,17 @@ Overfull \hbox (53.9143pt too wide) in paragraph at lines 45--47
 
 )) [23] (./main.aux) ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
+ 4482 strings out of 493117
+ 60876 string characters out of 6135434
+ 161255 words of memory out of 5000000
+ 7811 multiletter control sequences out of 15000+600000
+=======
  4477 strings out of 493117
  60757 string characters out of 6135433
  160916 words of memory out of 5000000
  7807 multiletter control sequences out of 15000+600000
+>>>>>>> origin/master
  17746 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,9n,43p,863b,1603s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -450,7 +478,15 @@ r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
 ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
 al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loca
 l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+<<<<<<< HEAD
 Output written on main.pdf (24 pages, 667682 bytes).
+=======
+<<<<<<< HEAD
+Output written on main.pdf (24 pages, 690267 bytes).
+=======
+Output written on main.pdf (24 pages, 667672 bytes).
+>>>>>>> origin/master
+>>>>>>> origin/master
 PDF statistics:
  175 PDF objects out of 1000 (max. 8388607)
  112 compressed objects within 2 object streams
