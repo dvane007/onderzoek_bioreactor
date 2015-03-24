@@ -11,3 +11,16 @@ Bovendien zou er gekeken kunnen worden naar factoren zoals licht en warmte, die 
 
 In het algemeen, natuurlijk afhankelijk van waarvoor de bioreactor gebruikt zal gaan worden, lijkt het mij handig om een kosten-analyse te maken, door zowel het voedsel als de bacteri\"en een kostprijs te geven (en een winstkenmerk). In zo'n geval kunnen we daadwerkelijk opzoek gaan naar het meest voordelige evenwicht in een bioreactor met inhoud $I$. 
 
+Hier zullen we iets dieper op ingaan. Laten we de vergelijking voor de kosten van de reactor $K(t)$ noemen. Afhankelijk van de precieze vraag rekenen we de kosten van de reactor zelf mee. Deze kosten noemen we $r_0$. Daarnaast hebben we op $t = 0$ ook nog andere kosten, die afhangt van $S(0)$ en $X(0)$. Laten we zeggen dat, als $S = 1$, dan zijn de kosten voor het voedsel $a$. Voor bacteri\"en nemen we dat als $X = 1$, dan zijn de kosten $b$. Er volgt dus dat $K(0) = r_0 + aS(0) + bX(0)$. 
+
+Dan zijn er nog een aantal variabele kosten. Ten eerste het voedsel. In het tijdsinterval $t$ wordt er, volgens de vergelijkingen in hoofdstuk \ref{Inleiding} $\alpha_2$ voedsel toegevoegd. Bovendien stroomt er $S(t)$ voedsel uit de reactor. Er zijn nu een twee mogelijkheden. (i) het voedsel dat uit de reactor stroomt kan niet meer worden teruggewonnen. In dat geval zien we $\frac{\dd K}{\dd t} = a \alpha_2$. (ii) het voedsel dat uit de reactor stroomt kan wel worden teruggewonnen. In dat geval zien we $\frac{\dd K}{\dd t} = a (\alpha_2 - S(t))$. 
+
+Ten tweede de bacteri\"en. Ook hiervoor zijn een aantal mogelijkheden. De eerste mogelijkheid is dat de bacteri\"en die uit de reactor stromen verkocht worden. Dan volgt dat $\frac{\dd K}{\dd t} = -bX(t)$. Als ze niet verkocht worden, maar bijvoorbeeld gebruikt worden voor onderzoek, hebben ze geen invloed op de kosten van de reactor. 
+
+Als laatste hebben we nog te maken met gemiddelde onderhoudskosten en de kosten om de reactor \"uberhaupt te laten draaien. We nemen aan dat deze kosten constant zijn, en noemen deze $k$. Al met al volgt er dus zoiets als:
+
+\begin{align*}
+	K(0) = r_0 + aS(0) + bX(0) \\
+	\frac{\dd K}{\dd t} = a (\alpha_2 - S(t)) - bX(t),
+\end{align*}
+waarbij $X$ en $S$ hetzelfde verband hebben als in hoofdstuk \ref{Inleiding}.
