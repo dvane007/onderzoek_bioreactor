@@ -9,10 +9,10 @@ Linearisatie is een methode die differentiaalvergelijkingen benadert door middel
 
 We beschouwen de vergelijkingen zoals in hoofdstuk \ref{Introductie_vergelijkingen} en laten hier $F(X,S) = \frac{\dd X}{\dd t}$ en $G(X,S) = \frac{\dd S}{\dd t}$. Nu is de eerste stap van de linearisatie het berekenen van de parti\"ele afgeleiden van $F$ en $G$.
 \begin{align*}
-F_X(X,S) &= \frac{\dd}{\dd X}(\alpha_1 \frac{S}{1 + S} X - X) = \alpha_1\frac{S}{1 + S} - 1\\
-F_S(X,S) &= \frac{\dd}{\dd S}(\alpha_1 \frac{S}{1 + S} X - X) = \alpha_1\frac{X}{(1+S)^2}\\
-G_X(X,S) &= \frac{\dd}{\dd X}(-\frac{S}{1 + S}X - S + \alpha_2) = -\frac{S}{1 + S}\\
-G_S(X,S) &= \frac{\dd}{\dd S}(-\frac{S}{1 + S}X - S + \alpha_2) = -1-\frac{X}{(1+s)^2}
+F_X(X,S) &= \frac{\dd}{\dd X} \left(\alpha_1 \frac{S}{1 + S} X - X \right) = \alpha_1\frac{S}{1 + S} - 1\\
+F_S(X,S) &= \frac{\dd}{\dd S} \left(\alpha_1 \frac{S}{1 + S} X - X \right) = \alpha_1\frac{X}{(1+S)^2}\\
+G_X(X,S) &= \frac{\dd}{\dd X} \left(-\frac{S}{1 + S}X - S + \alpha_2 \right) = -\frac{S}{1 + S}\\
+G_S(X,S) &= \frac{\dd}{\dd S} \left(-\frac{S}{1 + S}X - S + \alpha_2 \right) = -1-\frac{X}{(1+s)^2}
 \end{align*}
 
 Laat nu $(X_0, S_0)$ een evenwichtspunt zijn van het originele stelsel differentiaalvergelijkingen, dan
@@ -39,7 +39,7 @@ G_X(X_0,S_0) & G_S(X_0,S_0) \end{array} \right] =
 \frac{\alpha_2}{1+\alpha_2} & -1 \end{array} \right]\]
 De eigenwaarden van deze matrix zijn $-1$ en $\frac{\alpha_1\alpha_2}{1+\alpha_2}-1$. Als $\alpha_2 < \frac{1}{1-\alpha_1}$ dan zijn beide eigenwaarden kleiner dan 0 en is het punt $(0, \alpha_2)$ een stabiel evenwicht. Zo niet, dan is het een zadelpunt.
 
-Nu beschouwen we het andere evenwicht $(X_0, S_0) = (\alpha_1\alpha_2-\frac{1}{\alpha_1-1}-1,\frac{1}{\alpha_1-1})$. Dan volgt de volgende matrix:
+Nu beschouwen we het andere evenwicht $(X_0, S_0) = \left( \alpha_1\alpha_2-\frac{1}{\alpha_1-1}-1,\frac{1}{\alpha_1-1} \right)$. Dan volgt de volgende matrix:
 \[J = \left[ \begin{array}{cc}
 F_X(X_0,S_0) & F_S(X_0,S_0) \\
 G_X(X_0,S_0) & G_S(X_0,S_0) \end{array} \right] =
