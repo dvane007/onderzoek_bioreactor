@@ -13,4 +13,4 @@
 \contentsline {section}{\numberline {4.3}Het fasevlak.}{12}
 \contentsline {chapter}{\numberline {5}Linearisatie.}{14}
 \contentsline {chapter}{\numberline {6}Uitbreidingen.}{16}
-\contentsline {chapter}{\numberline {7}Conclusie.}{18}
+\contentsline {chapter}{\numberline {7}Conclusie.}{19}

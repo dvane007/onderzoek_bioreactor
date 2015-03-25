@@ -3,24 +3,61 @@
 \chapter{Uitbreidingen.}
 \label{Uitbreidingen}
 
-Zoals we zagen in hoofdstuk 3, groeit in ons model de bacterieconcentratie steeds sneller naarmate de toevoer van voedsel toeneemt. Een bioreactor heeft echter beperkte ruimte en dus is de bacterieconcentratie naar boven begrensd. Een begrenzing van de bacterieconcentratie zou dus een zinvolle uitbreiding zijn op het model. Aangezien de inhoud van een reactor een constante waarde heeft, betekent dit enkel dat $S + X$ nooit groter mag zijn dan de inhoud. Hiertoe hoeven we alleen geschikte beginwaarden te kiezen. 
+Omdat een bioreactor een beperkte inhoud heeft, zou dit een goede uitbreiding van het model zijn. Zoals we zagen in hoofdstuk 3, groeit in ons model de bacterieconcentratie steeds sneller naarmate de toevoer van voedsel toeneemt. Door het model uit te breiden met een beperkte inhoud, kan dit niet meer. Zo wordt het model realistischer. Noemen we nu de inhoud van de reactor $I$, zo dat $X + S \leq I$, dan kunnen we hieruit de mogelijke waarde $\alpha_2$ afleiden. Voor het evenwicht $(X,S) = (0,\alpha_2)$ zien we nu dat moet gelden dat $\alpha_2 < I$. Voor het evenwicht $(X,S) = (\alpha_1\alpha_2-\frac{1}{\alpha_1-1}-1, \frac{1}{\alpha_1-1})$ zien we nu dat $\alpha_1\alpha_2-\frac{1}{\alpha_1-1}-1 + \frac{1}{\alpha_1-1} = \alpha_1\alpha_2 - 1 \leq I$ ofwel
+\begin{equation}
+\alpha_2 \leq \frac{I + 1}{\alpha_1}. \label{eq:boundary}
+\end{equation}
 
-Daarnaast is het algemeen bekend dat bacteri\"en niet alleen leven op voedsel, maar ook op andere factoren, zoals zuurstof en water. Deze kunnen natuurlijk worden verpakt in de voedselconcentratie, maar ik denk dat het realistischer is om een van deze, of beide, weer te geven in een aparte vergelijking. 
+Daarnaast is het algemeen bekend dat bacteri\"en niet alleen leven op voedsel, maar ook op andere factoren, zoals zuurstof en water. Deze kunnen natuurlijk worden verpakt in de voedselconcentratie, maar het is realistischer om een van deze, of beide, weer te geven in een aparte vergelijking. 
 
-Bovendien zou er gekeken kunnen worden naar factoren zoals licht en warmte, die de groei van bacteri\"en sterk be\"invloed. Deze kunnen echter ook verpakt worden in de constante $\alpha_1$. 
+Bovendien zou er gekeken kunnen worden naar omgevingsfactoren zoals licht en warmte, die de groei van bacteri\"en sterk be\"invloed. Deze worden in het huidige model verpakt in de constante $\alpha_1$, maar kunnen ook los worden genomen voor een meer realistisch model. 
 
-In het algemeen, natuurlijk afhankelijk van waarvoor de bioreactor gebruikt zal gaan worden, lijkt het mij handig om een kosten-analyse te maken, door zowel het voedsel als de bacteri\"en een kostprijs te geven (en een winstkenmerk). In zo'n geval kunnen we daadwerkelijk opzoek gaan naar het meest voordelige evenwicht in een bioreactor met inhoud $I$. 
+Een andere uitbreiding van het model is een kosten-analyse. Als we aannemen dat de kostprijs van bacteri\"en en voedsel constant is, kunnen we hiermee op zoek gaan naar het meest voordelige evenwicht in een bioreactor met een eindige inhoud $I$. Deze uitbreiding zullen we verder uitwerken.
 
-Hier zullen we iets dieper op ingaan. Laten we de vergelijking voor de kosten van de reactor $K(t)$ noemen. Afhankelijk van de precieze vraag rekenen we de kosten van de reactor zelf mee. Deze kosten noemen we $r_0$. Daarnaast hebben we op $t = 0$ ook nog andere kosten, die afhangt van $S(0)$ en $X(0)$. Laten we zeggen dat, als $S = 1$, dan zijn de kosten voor het voedsel $a$. Voor bacteri\"en nemen we dat als $X = 1$, dan zijn de kosten $b$. Er volgt dus dat $K(0) = r_0 + aS(0) + bX(0)$. 
+Laten we de totale kosten van de reactor $K(t)$ noemen. Ten eerste is deze afhankelijk van de opstartkosten $K(0)$. Deze bestaan uit de bouw- en materiaalkosten $r$ van de reactor uit de kosten van het voedsel en de bacteri\"en die op $t=0$ aan de reactor worden toegevoegd. Noemen we de prijs van een hoeveelheid voedsel $a$ en de prijs van een hoeveelheid bacteri\"en $b$, dan worden de totale opstartkosten $K(0) = r + aS(0) + bX(0)$.
 
-Dan zijn er nog een aantal variabele kosten. Ten eerste het voedsel. In het tijdsinterval $t$ wordt er, volgens de vergelijkingen in hoofdstuk \ref{Inleiding} $\alpha_2$ voedsel toegevoegd. Bovendien stroomt er $S(t)$ voedsel uit de reactor. Er zijn nu een twee mogelijkheden. (i) het voedsel dat uit de reactor stroomt kan niet meer worden teruggewonnen. In dat geval zien we $\frac{\dd K}{\dd t} = a \alpha_2$. (ii) het voedsel dat uit de reactor stroomt kan wel worden teruggewonnen. In dat geval zien we $\frac{\dd K}{\dd t} = a (\alpha_2 - S(t))$. 
+Naast de opstartkosten hebben we nog een aantal variabele kosten. Ten eerste het voedsel. Per tijdseenheid wordt, volgens de vergelijkingen in hoofdstuk \ref{Inleiding} $\alpha_2$ voedsel toegevoegd. Bovendien stroomt er $S(t)$ voedsel uit de reactor. Stel dat we van dit uitstromende voedsel een deel $0\leq c\leq1$ terug kunnen winnen zodat we het opnieuw kunnen gebruiken. dan worden de totale kosten van het voedsel per tijd $a(\alpha_2-cS(t))$. 
 
-Ten tweede de bacteri\"en. Ook hiervoor zijn een aantal mogelijkheden. De eerste mogelijkheid is dat de bacteri\"en die uit de reactor stromen verkocht worden. Dan volgt dat $\frac{\dd K}{\dd t} = -bX(t)$. Als ze niet verkocht worden, maar bijvoorbeeld gebruikt worden voor onderzoek, hebben ze geen invloed op de kosten van de reactor. 
+Ten tweede de bacteri\"en. Per tijdseenheid stroomt er $X(t)$ bacteri\"en de reactor uit. Stel dat we een deel $0\leq d\leq1$ van deze uitstromende bacteri\"en verkopen, dan worden de totale kosten van de bacteri\"en per tijd $b(-dX(t))$.
 
-Als laatste hebben we nog te maken met gemiddelde onderhoudskosten en de kosten om de reactor \"uberhaupt te laten draaien. We nemen aan dat deze kosten constant zijn, en noemen deze $k$. Al met al volgt er dus zoiets als:
+Ten slotte hebben we nog te maken met kosten om de reactor draaiend te houden. We nemen aan dat deze kosten constant zijn, en noemen deze $k$.
 
+Als we al de bovengenoemde kosten combineren krijgen we de volgende differentiaalvergelijking:
+\begin{equation}
+\frac{\dd K}{\dd t} = a(\alpha_2 - cS(t)) - bdX(t) + k. \label{eq:cost}
+\end{equation}
+
+Als we nu aannemen dat de reactor het meest van de tijd in evenwicht is, kunnen we bij gegeven $\alpha_1$ een $\alpha_2$ bepalen zo dat de kosten per tijd zo laag mogelijk zijn.
+
+De kosten per tijd geven we weer in een functie $f$ afhankelijk van $\alpha_2$. Hiertoe vullen we de evenwichtsvoorwaarden in in vergelijking \ref{eq:cost} en stellen we $f(\alpha_2) = \frac{\dd K}{\dd t}$. We krijgen nu:
 \begin{align*}
-	K(0) = r_0 + aS(0) + bX(0) \\
-	\frac{\dd K}{\dd t} = a (\alpha_2 - S(t)) - bX(t) + k,
+f(\alpha_2)
+&=a(\alpha_2 - \frac{c}{\alpha_1-1}) - bd(\alpha_1\alpha_2-\frac{1}{\alpha_1-1}-1) + k\\
+&=\alpha_2(a-\alpha_1bd) + \frac{bd-ac}{\alpha_1-1}+bd+k.
 \end{align*}
-waarbij $X$ en $S$ hetzelfde verband hebben als in hoofdstuk \ref{Inleiding}.
+Dit is een lijn.
+
+Om de minimale kosten te vinden moeten we nu het minimum van deze functie vinden voor $\alpha_2\in[0, \frac{I + 1}{\alpha_1}]$ \ref{eq:boundary}. Als $a > \alpha_1bd$, dan is $f$ een stijgende lijn en zijn de kosten minimaal als $\alpha_2 = 0$. Het is nu zaak voedsel ergens anders goedkoper in te kopen. Als $a = \alpha_1bd$, dan is $f$ constant en zijn de kosten niet afhankelijk van $\alpha_2$. Als $a < \alpha_1bd$, dan is $f$ een dalende lijn. In dit geval kunnen we een lucratieve business opzetten. De kosten per tijdseenheid zijn nu het kleinst als $\alpha_2 = \frac{I+1}{\alpha_1}$. Nu geldt:
+\begin{align*}
+\frac{\dd K}{\dd t}
+&=\frac{I+1}{\alpha_1}(a-\alpha_1bd) + \frac{bd-ac}{\alpha_1-1}+bd+k\\
+&=a\frac{I+1}{\alpha_1} + \frac{bd-ac}{\alpha_1-1} - Ibd + k
+\end{align*}
+
+De kosten per tijd hangen nu alleen nog maar af van $\alpha_1$ en $I$. Omdat $\alpha_1$ gegeven is voor de bacteriesoort, kunnen we alleen $I$ nog vari\"eren. Laat nu $g(I) = \frac{\dd K}{\dd t}$ dan krijgen we de volgende functie:
+\begin{align*}
+g(\alpha_1)
+&=a\frac{I+1}{\alpha_1} + \frac{bd-ac}{\alpha_1-1} - Ibd + k\\
+&=I\left(\frac{a}{\alpha_1}-bd\right) + \frac{a}{\alpha_1} + \frac{bd-ac}{\alpha_1-1} + k
+\end{align*}
+Dit is een lijn.
+
+Als $\alpha<\frac{a}{bd}$
+
+
+
+
+
+
+
+
