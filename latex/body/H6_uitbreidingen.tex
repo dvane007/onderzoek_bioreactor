@@ -37,14 +37,14 @@ f(\alpha_2)
 \end{align*}
 Dit is een lijn.
 
-Om de minimale kosten te vinden moeten we nu het minimum van deze functie vinden voor $\alpha_2\in[0, \frac{I + 1}{\alpha_1}]$ \ref{eq:boundary}. Als $a > \alpha_1bd$, dan is $f$ een stijgende lijn en zijn de kosten minimaal als $\alpha_2 = 0$. Het is nu zaak voedsel ergens anders goedkoper in te kopen. Als $a = \alpha_1bd$, dan is $f$ constant en zijn de kosten niet afhankelijk van $\alpha_2$. Als $a < \alpha_1bd$, dan is $f$ een dalende lijn. In dit geval kunnen we een lucratieve business opzetten. De kosten per tijdseenheid zijn nu het kleinst als $\alpha_2 = \frac{I+1}{\alpha_1}$. Nu geldt:
+Om de minimale kosten te vinden moeten we nu het minimum van deze functie vinden voor $\alpha_2\in[0, \frac{I + 1}{\alpha_1}]$, want \ref{eq:boundary}. Als $a > \alpha_1bd$, dan is $f$ een stijgende lijn en zijn de kosten minimaal als $\alpha_2 = 0$. Het is nu zaak voedsel ergens anders goedkoper in te kopen. Als $a = \alpha_1bd$, dan is $f$ constant en zijn de kosten niet afhankelijk van $\alpha_2$. Als $a < \alpha_1bd$, dan is $f$ een dalende lijn. In dit geval kunnen we een lucratieve business opzetten. De kosten per tijdseenheid zijn nu het kleinst als $\alpha_2 = \frac{I+1}{\alpha_1}$. Nu geldt:
 \begin{align*}
 \frac{\dd K}{\dd t}
 &=\frac{I+1}{\alpha_1}(a-\alpha_1bd) + \frac{bd-ac}{\alpha_1-1}+bd+k\\
 &=a\frac{I+1}{\alpha_1} + \frac{bd-ac}{\alpha_1-1} - Ibd + k
 \end{align*}
 
-De kosten per tijd hangen nu alleen nog maar af van $\alpha_1$ en $I$. Omdat $\alpha_1$ gegeven is voor de bacteriesoort, kunnen we alleen $I$ nog vari\"eren. Laat nu $g(I) = \frac{\dd K}{\dd t}$ dan krijgen we de volgende functie:
+De kosten per tijd hangen nu alleen nog maar af van $\alpha_1$ en de inhoud $I$. Omdat $\alpha_1$ gegeven is voor de bacteriesoort, kunnen we alleen de inhoud $I$ nog vari\"eren. Laat nu $g(I) = \frac{\dd K}{\dd t}$ dan krijgen we de volgende functie:
 \begin{align*}
 g(\alpha_1)
 &=a\frac{I+1}{\alpha_1} + \frac{bd-ac}{\alpha_1-1} - Ibd + k\\
@@ -52,7 +52,11 @@ g(\alpha_1)
 \end{align*}
 Dit is een lijn.
 
-Als $\alpha<\frac{a}{bd}$
+Om de minimale kosten te vinden moeten we nu het minimum van deze functie vinden voor $I\in[0,\inf)$.
+
+Als $\alpha_1<\frac{a}{bd}$, dan is $g$ een stijgende lijn en zijn de kosten minimaal als $I = 0$. Om de kosten te drukken, moet er of goedkoper voedsel worden ingekocht, of moeten er meer bacteri\"en worden verkocht voor een hogere prijs.
+
+Als $\alpha_1=\frac{a}{bd}$, dan is $g$ constant en hangen de kosten niet af van $I$. Als $\alpha_1>\frac{a}{bd}$, dan is $g$ een dalende lijn en kunnen we door $I$ groot te kiezen, uitkomen op negatieve kosten, ofwel winst! Hiervoor moet gelden dat $I\left(\frac{a}{\alpha_1}-bd\right) + \frac{a}{\alpha_1} + \frac{bd-ac}{\alpha_1-1} + k < 0$, ofwel $I > \frac{\frac{a}{\alpha_1} + \frac{bd-ac}{\alpha_1-1} + k}{bd-\frac{a}{\alpha_1}}$.
 
 
 
