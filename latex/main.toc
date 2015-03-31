@@ -14,3 +14,4 @@
 \contentsline {chapter}{\numberline {5}Linearisatie.}{14}
 \contentsline {chapter}{\numberline {6}Uitbreidingen.}{16}
 \contentsline {chapter}{\numberline {7}Conclusie.}{19}
+\contentsline {chapter}{\numberline {8}Discussie.}{20}
